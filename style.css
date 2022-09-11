@@ -3,6 +3,9 @@ body{
     font-family: 'Montserrat', sans-serif;
     
 }
+/*********************
+ ***navigation area start
+ ******************** */
 header{
     display: flex;
     justify-content: space-between;
@@ -21,4 +24,47 @@ header>nav> a{
 
 header>h3{
     font-size: 30px;
+}
+/*-------------------------- navigation area end ----------------------- */
+.introduction-area{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    align-items: center;
+}
+.introduction-text{
+    width: 582px;
+    height: 300px;
+}
+.textand-buton{
+    display: flex;
+}
+.introduction-text>h1{
+    font-size: 52px;
+    font-weight: bold;
+}
+.top-text{
+    width: 500px;
+}
+.top-button{
+    margin-top:30px;
+}
+
+.prebook-button {
+    
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 15px;
+    background-image:linear-gradient(45deg,#5cdacf,#000303)
+}
+.cover-image img{
+    width: 440px;
+    height: 414px;
+    margin-top: 50px;
+}
+.cover-image{
+    height: 475px;
+    width: 475px;
+    background-image: url("influencer-gear-main/images/Circle design.svg");
 }
