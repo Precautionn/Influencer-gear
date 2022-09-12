@@ -1,11 +1,12 @@
 body{
-    padding: 50px 120px;
     color: #3A3A3A;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Nunito', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
-    
+}
+main{
+    padding: 50px 120px;
 }
 /*********************
  ***navigation area start
@@ -92,4 +93,100 @@ hr{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/**********************************
+***popular collection section start*
+********************************** */
+
+.popular-text{
+    margin-top: 100px;
+    text-align: center;
+}
+.product-area{
+
+    padding: 40px;
+/*  
+    background-color: bisque; */
+    font-size: 14px;
+    margin: 20px 14%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    
+        
+}
+
+.product-area h1{
+    font-size: 28px;
+}
+.product{
+    border-radius: 5px;
+    /* background-color: lightblue; */
+    height: 476px;
+    width: 329px;
+    padding: 15px 5px 0 5px;
+    box-shadow: 5px 5px 50px lightgray;
+}
+.product-area>.product img{
+    width: 300px;
+    height: 256px;
+    margin-left: 15px;
+}
+.product-image{
+    width: 300px;
+    height: 256px;
+}
+.product-info{
+    text-align: left;
+    padding-left: 15px;
+}
+.stars{
+    color: goldenrod;
+}
+.check{
+    color: green;
+}
+.see-more a{
+    text-decoration: none;
+    color: #34756F;
+
+}
+.see-more{
+    text-align: right;
+    position: relative;
+    right:290px;
+}
+
+/*----------------------------------- popular collection end -------------------------------------- */
+
+.featured-section{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+.featured-info{
+    width: 600px;
+}
+
+/* -------------------------------------featured section end ------------------------------------------------- */
+
+
+
+footer{
+    color: white;
+    background-color: #052E2B;
+    text-align: center;
+    padding: 30px;
+}
+.social-links{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    background-color: rgba(128, 128, 128, 0.363);
+    
+    border-radius:50%;
 }
