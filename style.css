@@ -1,3 +1,4 @@
+
 body{
     color: #3b3b3b;
     font-family: 'Montserrat', sans-serif;
@@ -19,8 +20,8 @@ header{
     color: #052E2B;
     font-size: 40px;
     background: -webkit-linear-gradient(#052E2B, #3b3b3b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 header>nav{
@@ -37,8 +38,11 @@ header>nav> a{
     font-size: 20px;
     font-weight: bold;
 }
+nav a.icon {
+    display: none;
+    }
 header>nav> a:hover{
-   ;background-color: #13383473;
+    background-color: #13383473;
     padding: 10px 10px;
     border-radius: 5px;
 }
@@ -58,9 +62,9 @@ header>h3{
     width: 582px;
     height: 300px;
 }
-.textand-buton{
+/* .textand-button{
     display: flex;
-}
+} */
 .introduction-text>h1{
     font-size: 52px;
     font-weight: bold;
@@ -128,6 +132,7 @@ hr{
     grid-template-columns: auto auto auto;
     grid-column-gap: 20px;
     grid-row-gap: 30px;
+    justify-content: center;
     
         
 }
@@ -177,7 +182,7 @@ hr{
 .see-more{
     text-align: right;
     position: relative;
-    right:290px;
+    right:140px;
 }
 
 /*----------------------------------- popular collection end -------------------------------------- */
@@ -189,9 +194,11 @@ hr{
     margin-bottom: 100px;
 }
 .featured-info{
-    width: 600px;
+    width: 650px;
 }
-
+.featured-text{
+    margin-bottom: 40px;
+}
 /* -------------------------------------featured section end ------------------------------------------------- */
 
 
@@ -211,3 +218,208 @@ footer{
     
     border-radius:50%;
 }
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 688px){
+    main{
+        /* background-color: antiquewhite; */
+        padding: 0px;
+        width: 100%;
+    }
+    
+    
+    header h3{
+        
+        position: relative;
+        left: 90px;
+        top: 45px;
+        font-size: 15px;
+        
+    }
+    #sites-name{ 
+        
+       font-size: 20px;
+    }
+    nav a{display: none;}
+    nav a.icon {
+    display: block;
+    }
+    .introduction-area{
+        width: 100%;
+        /* background-color: #5cdacf; */
+        padding: 5px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content:center;  
+        margin-bottom: 60px;
+        
+    }
+    .introduction-text h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .introduction-text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 40px;
+        
+        
+    }
+    .top-text{
+        width: 100%;
+        text-align: center;
+        
+    }
+    .top-button{
+        position: relative;
+        text-align: center;
+    }
+    
+
+    .cover-image img{
+        width: 275px;
+        height: 250px; 
+        
+        
+      
+    }
+    .cover-image{
+        /* background-color: aliceblue; */
+        height: 300px;
+        width: 100%;
+    }
+    hr{
+        display: none;
+    }
+    .company-logos img{
+        height: 3em;
+        width: 3em;
+    }
+    .company-logos{
+        margin-top: 0%;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        
+    }
+    .product-area{
+        
+        grid-template-columns: repeat(1,1fr);
+        justify-content:center ;
+    }
+    .see-more{
+        position: relative;
+        right: 40px;
+
+    }
+    .featured-section{
+        /* background-color: yellow; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .featured-image img{
+        width: 100%;
+        height: 250px;
+    }
+    .featured-info{
+        width: 100%;
+        /* background-color: lightgreen; */
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .featured-info h1{
+        text-align: center;
+    }
+    .featured-text{
+
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    .featured-button{
+        position: relative;
+        left: 125px;
+    }
+  
+}
+@media only screen and (min-width: 689px) and (max-width: 992px){
+    main{
+        padding: 50px;
+    }
+   
+    header{
+        
+        display: flex;
+        justify-content: space-between;
+    }
+    nav{
+        display: flex;
+    }
+    nav a{
+        display: none;
+    }
+    nav a.home{
+        display: block;
+    }
+    .introduction-area{
+        
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .top-text{
+        width: 100%;
+        text-align: center;
+    }
+    .cover-image{
+        margin-top: 130px;
+    }
+
+    .company-logos img{
+        height: 4em;
+        width: 4em;
+    }
+    .company-logos{
+        margin-top: 0%;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 40px;
+        
+    }
+    .product-area{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .featured-section{
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+
+
+
+    
+
+
+
+
+}
+
